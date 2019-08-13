@@ -1,0 +1,298 @@
+{
+  "events": [
+    {
+      "id": "6df8c904-3b46-4ff8-8fe1-8a2979e3a629",
+      "startAt": 1565017200,
+      "endAt": 1565028000,
+      "inspection": {
+        "id": "8393f49f-be21-4547-8acd-fd3948857287",
+        "inspectionStatus": "Draft",
+        "inspectionTemplate": "Selected",
+        "property": {
+          "id": "dd2e776b-08be-4e9c-99cc-4717d6afff34",
+          "addressId": "1925fa5d-c92a-4f32-b529-d9da0d275009",
+          "address": {
+            "id": "1925fa5d-c92a-4f32-b529-d9da0d275009",
+            "streetNumber": null,
+            "street": "Air and Space Museum Parkway",
+            "address2": null,
+            "city": {
+              "id": "e15f4138-4d6c-4741-bf6f-803f2b24a5c7",
+              "name": "Chantilly",
+              "province": {
+                "id": "fe2ef495-a115-3761-9729-49784c16bf23",
+                "name": "Virginia",
+                "abbreviation": "VA"
+              }
+            },
+            "postalCode": {
+              "id": "c8b8732f-08ae-422e-ae7c-dcced28d7e0a",
+              "postalCode": null
+            }
+          }
+        }
+      },
+      "calendarEventsUsers": [
+        {
+          "id": "ce3cdb8b-a488-4df1-ad5a-dbccef62df22",
+          "userId": "839713e2-e0e5-4e79-9623-f6a7eb9e1bc5",
+          "roleId": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+          "user": {
+            "id": "839713e2-e0e5-4e79-9623-f6a7eb9e1bc5",
+            "firstName": "Sam",
+            "lastName": "A"
+          },
+          "role": {
+            "id": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+            "name": "Inspector"
+          }
+        }
+      ]
+    },
+    {
+      "id": "41eaba9b-03a0-4289-9272-045a6121e8af",
+      "startAt": 1564770600,
+      "endAt": 1564782300,
+      "inspection": {
+        "id": "7a17ff5e-1231-4cf9-84ec-c0e61542f930",
+        "inspectionStatus": "Published",
+        "inspectionTemplate": "Selected",
+        "property": {
+          "id": "11a1f2b7-e076-44de-bd49-a6e5ab29c999",
+          "addressId": "207cb909-e79d-40d1-bac1-a90a5cbfd908",
+          "address": {
+            "id": "207cb909-e79d-40d1-bac1-a90a5cbfd908",
+            "streetNumber": null,
+            "street": "Zan Road",
+            "address2": null,
+            "city": {
+              "id": "40f1c79b-b895-43c7-b86b-5b273d0b50bc",
+              "name": "Charlottesville",
+              "province": {
+                "id": "fe2ef495-a115-3761-9729-49784c16bf23",
+                "name": "Virginia",
+                "abbreviation": "VA"
+              }
+            },
+            "postalCode": {
+              "id": "18993dc2-a003-499f-8de9-9d7c0c175828",
+              "postalCode": "22901"
+            }
+          }
+        }
+      },
+      "calendarEventsUsers": [
+        {
+          "id": "1c373471-3d2a-4a6e-ad83-ad35c0516bfb",
+          "userId": "aeaea695-82e5-4804-9eb9-d3c8c4a14a95",
+          "roleId": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+          "user": {
+            "id": "aeaea695-82e5-4804-9eb9-d3c8c4a14a95",
+            "firstName": "Joel",
+            "lastName": "Lewis"
+          },
+          "role": {
+            "id": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+            "name": "Inspector"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f6d187b5-6886-4c49-bac0-50a3a75a6ca6",
+      "startAt": 1564767000,
+      "endAt": 1564777800,
+      "inspection": {
+        "id": "d49613f7-3bfb-4939-9120-edb313c10f5d",
+        "inspectionStatus": "Archived",
+        "inspectionTemplate": "Unselected",
+        "property": {
+          "id": "35958b41-67c7-4d0d-9b43-cb27b39f0033",
+          "addressId": "4ac6defd-9bb4-4e44-a208-d10330acf70e",
+          "address": {
+            "id": "4ac6defd-9bb4-4e44-a208-d10330acf70e",
+            "streetNumber": null,
+            "street": "Xenia Street Southeast",
+            "address2": null,
+            "city": {
+              "id": "1b645389-2473-3667-9073-72d45eb05abc",
+              "name": "Washington",
+              "province": {
+                "id": "b7eb6c68-9c03-3217-8797-66fdb77c3bac",
+                "name": "District of Columbia",
+                "abbreviation": "DC"
+              }
+            },
+            "postalCode": {
+              "id": "59dae485-134e-4096-95b9-bc822bfffc0b",
+              "postalCode": "20032"
+            }
+          }
+        }
+      },
+      "calendarEventsUsers": [
+        {
+          "id": "e5f74be8-5b7a-44b9-8ad1-d861de9e6457",
+          "userId": "839713e2-e0e5-4e79-9623-f6a7eb9e1bc5",
+          "roleId": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+          "user": {
+            "id": "839713e2-e0e5-4e79-9623-f6a7eb9e1bc5",
+            "firstName": "Sam",
+            "lastName": "A"
+          },
+          "role": {
+            "id": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+            "name": "Inspector"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0e201313-7648-4bb8-8dcb-3ca4e3333984",
+      "startAt": 1564758000,
+      "endAt": 1564768800,
+      "inspection": {
+        "id": "8dd47385-e094-464e-aaae-a0f369a3d792",
+        "inspectionStatus": "Scheduled",
+        "inspectionTemplate": "Selected",
+        "property": {
+          "id": "e3264516-60f5-46d1-8a6f-e0a98c5299d1",
+          "addressId": "77d1344b-efb9-498d-923f-8c5b4b76e3ac",
+          "address": {
+            "id": "77d1344b-efb9-498d-923f-8c5b4b76e3ac",
+            "streetNumber": null,
+            "street": "Zion Drive",
+            "address2": null,
+            "city": {
+              "id": "1f45fc93-feb1-4b1d-80c9-436e308518cc",
+              "name": null,
+              "province": {
+                "id": "fe2ef495-a115-3761-9729-49784c16bf23",
+                "name": "Virginia",
+                "abbreviation": "VA"
+              }
+            },
+            "postalCode": {
+              "id": "2b28aec6-86ad-43ef-a7af-1c6b4d6c0b22",
+              "postalCode": "22032"
+            }
+          }
+        }
+      },
+      "calendarEventsUsers": [
+        {
+          "id": "553ffb43-a909-4d00-89b4-da64651b29ff",
+          "userId": "2ed1e396-7083-4939-b64d-7ab5768fa816",
+          "roleId": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+          "user": {
+            "id": "2ed1e396-7083-4939-b64d-7ab5768fa816",
+            "firstName": "Timothy",
+            "lastName": "Jeffcoat"
+          },
+          "role": {
+            "id": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+            "name": "Inspector"
+          }
+        }
+      ]
+    },
+    {
+      "id": "30a420bd-3700-4043-8ff1-3ec46643f5b9",
+      "startAt": 1563289200,
+      "endAt": 1563300000,
+      "inspection": {
+        "id": "4db169e8-ec88-4713-a8c0-36166a35667a",
+        "inspectionStatus": "Processing",
+        "inspectionTemplate": "Selected",
+        "property": {
+          "id": "41c9e472-0600-4219-8e25-82030c2e342c",
+          "addressId": "dad0a41e-ba20-4bf0-8a19-526dd5c3deff",
+          "address": {
+            "id": "dad0a41e-ba20-4bf0-8a19-526dd5c3deff",
+            "streetNumber": null,
+            "street": "Fair Lakes Shopping Center",
+            "address2": null,
+            "city": {
+              "id": "e63cde9b-4108-4844-8703-8cda54c83c0f",
+              "name": "Fairfax",
+              "province": {
+                "id": "fe2ef495-a115-3761-9729-49784c16bf23",
+                "name": "Virginia",
+                "abbreviation": "VA"
+              }
+            },
+            "postalCode": {
+              "id": "6852500c-4d06-4929-a70e-da89dc394e72",
+              "postalCode": "22033"
+            }
+          }
+        }
+      },
+      "calendarEventsUsers": [
+        {
+          "id": "de0589ba-cb07-4f08-bb0c-ed2b8ede3564",
+          "userId": "2ed1e396-7083-4939-b64d-7ab5768fa816",
+          "roleId": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+          "user": {
+            "id": "2ed1e396-7083-4939-b64d-7ab5768fa816",
+            "firstName": "Timothy",
+            "lastName": "Jeffcoat"
+          },
+          "role": {
+            "id": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+            "name": "Inspector"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+      "startAt": 1563289200,
+      "endAt": 1563300000,
+      "inspection": {
+        "id": "4db169e8-ec88-4713-a8c0-36166a35667a",
+        "inspectionStatus": "Scheduled",
+        "inspectionTemplate": "Unselected",
+        "property": {
+          "id": "41c9e472-0600-4219-8e25-82030c2e342c",
+          "addressId": "dad0a41e-ba20-4bf0-8a19-526dd5c3deff",
+          "address": {
+            "id": "dad0a41e-ba20-4bf0-8a19-526dd5c3deff",
+            "streetNumber": null,
+            "street": "Fair Lakes Shopping Center",
+            "address2": null,
+            "city": {
+              "id": "e63cde9b-4108-4844-8703-8cda54c83c0f",
+              "name": "Fairfax",
+              "province": {
+                "id": "fe2ef495-a115-3761-9729-49784c16bf23",
+                "name": "Virginia",
+                "abbreviation": "VA"
+              }
+            },
+            "postalCode": {
+              "id": "6852500c-4d06-4929-a70e-da89dc394e72",
+              "postalCode": "22033"
+            }
+          }
+        }
+      },
+      "calendarEventsUsers": [
+        {
+          "id": "de0589ba-cb07-4f08-bb0c-ed2b8ede3564",
+          "userId": "2ed1e396-7083-4939-b64d-7ab5768fa816",
+          "roleId": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+          "user": {
+            "id": "2ed1e396-7083-4939-b64d-7ab5768fa816",
+            "firstName": "Chris",
+            "lastName": "Jones"
+          },
+          "role": {
+            "id": "c1dfd96e-ea8c-32b6-a785-275bca38ac26",
+            "name": "Inspector"
+          }
+        }
+      ]
+    }
+  ]
+}
