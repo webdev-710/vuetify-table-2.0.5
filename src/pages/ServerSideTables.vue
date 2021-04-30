@@ -1,5 +1,6 @@
 <template>
   <div>
-    Admin
+    Metrics
   </div>
+
 </template>
