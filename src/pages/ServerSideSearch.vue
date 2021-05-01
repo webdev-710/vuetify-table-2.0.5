@@ -1,11 +1,13 @@
 <template>
   <div>
     <v-layout justify-space-between class="py-6">
-      <div class="display-1 font-weight-light">Default Table</div>
+      <div class="display-1 font-weight-light">Tables Using Data From Server</div>
     </v-layout>
 
     <v-card>
       <v-card-title>
+      	<h5>Server Side Search</h5>
+      	<v-spacer></v-spacer>
         <v-text-field
           v-model="search"
           solo
@@ -13,6 +15,7 @@
           label="Search"
           single-line
           hide-details
+          @keyup.enter="searchStudents"
         ></v-text-field>
       </v-card-title>
 
@@ -23,7 +26,6 @@
           :items="students"
           :items-per-page="5"
           class="elevation-1"
-          :search="search"
         >
           <template v-slot:item.status="{ item }">
             <v-chip
@@ -68,7 +70,9 @@ export default {
     })
   },
   mounted() {
-    this.getStudents({})
+    this.getStudents({
+      search: ''
+    })
   },
   methods: {
     ...mapActions({
@@ -79,6 +83,11 @@ export default {
       else if (status === 'Pending') return 'yellow'
       else if (status === 'Suspended') return 'red'
       else return ''
+    },
+    searchStudents() {
+      this.getStudents({
+        search: this.search
+      })
     }
   }
 }

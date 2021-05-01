@@ -1,11 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Inspections from '@/pages/Inspections'
-import Admin from '@/pages/Admin'
 import DefaultTable from '@/pages/DefaultTable'
-import ServerSideTable from '@/pages/ServerSideTables'
-import Templates from '@/pages/Templates'
-import Contacts from '@/pages/Contacts'
+import ServerSideSearch from '@/pages/ServerSideSearch'
+import ServerSidePagination from '@/pages/ServerSidePagination'
 
 Vue.use(Router)
 
@@ -13,38 +10,20 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Inspections',
-      component: Inspections
-    },
-    {
-      path: '/inspections',
-      name: 'Inspections',
-      component: Inspections
-    },
-    {
-      path: '/admin',
-      name: 'Admin',
-      component: Admin
-    },
-    {
-      path: '/contacts',
-      name: 'Contacts',
-      component: Contacts
-    },
-    {
+      redirect: '/default-table'
+    }, {
       path: '/default-table',
       name: 'default-table',
       component: DefaultTable
     },
     {
-      path: '/server-side-tables',
-      name: 'server-side-tables',
-      component: ServerSideTable
-    },
-    {
-      path: '/templates',
-      name: 'Templates',
-      component: Templates
+      path: '/server-side-tables/search',
+      name: 'server-side-tables-search',
+      component: ServerSideSearch
+    }, {
+      path: '/server-side-tables/pagination',
+      name: 'server-side-tables-pagination',
+      component: ServerSidePagination
     }
   ],
   mode: 'history'

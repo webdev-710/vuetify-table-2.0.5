@@ -1,29 +1,23 @@
 <template>
   <div>
     <v-layout justify-space-between class="py-6">
-      <div class="display-1 font-weight-light">Default Table</div>
+      <div class="display-1 font-weight-light">Tables Using Data From Server</div>
     </v-layout>
 
     <v-card>
       <v-card-title>
-        <v-text-field
-          v-model="search"
-          solo
-          append-icon="mdi-magnify"
-          label="Search"
-          single-line
-          hide-details
-        ></v-text-field>
+        <h5>Server Side Pagination</h5>
       </v-card-title>
-
       <v-card-text>
         <v-data-table
           :loading="loadingStudents"
           :headers="headers"
           :items="students"
-          :items-per-page="5"
+          :items-per-page="itemsPerPage"
+          :page="page"
+          :server-items-length="totalStudents"
+          :options.sync="options"
           class="elevation-1"
-          :search="search"
         >
           <template v-slot:item.status="{ item }">
             <v-chip
@@ -46,7 +40,9 @@ import { mapState, mapActions } from 'vuex'
 export default {
   data() {
     return {
-      search: '',
+      options: {},
+      page: 1,
+      itemsPerPage: 5,
 
       headers: [
         {
@@ -64,21 +60,42 @@ export default {
   computed: {
     ...mapState({
       loadingStudents: (state) => state.students.loadingStudents,
+      totalStudents: (state) => state.students.totalStudents,
       students: (state) => state.students.students
     })
   },
+  watch: {
+    options: {
+      handler (newPage) {
+        this.readDataFromAPI()
+      },
+      deep: true
+    }
+  },
   mounted() {
-    this.getStudents({})
+    this.readDataFromAPI()
   },
   methods: {
     ...mapActions({
-      getStudents: 'students/getStudentsSearch'
+      getStudents: 'students/getStudents'
     }),
     getColor(status) {
       if (status === 'Active') return 'green'
       else if (status === 'Pending') return 'yellow'
       else if (status === 'Suspended') return 'red'
       else return ''
+    },
+    readDataFromAPI() {
+      const { page, itemsPerPage } = this.options
+      const pageNumber = page - 1
+
+      this.page = page
+      this.itemsPerPage = itemsPerPage
+
+      this.getStudents({
+        page,
+        itemsPerPage
+      })
     }
   }
 }
