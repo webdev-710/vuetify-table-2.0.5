@@ -3,9 +3,6 @@
     background-color: white;
     padding: 36px 22px;
   }
-  .v-list-item--active .v-list-item__icon, .v-list-item--active .v-list-item__content {
-    color: #00a48b;
-  }
 </style>
 <template>
   <v-navigation-drawer
